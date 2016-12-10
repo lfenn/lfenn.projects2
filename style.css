@@ -12,12 +12,12 @@ main{
 
 nav {
    background-color:#000000;
-   margin-bottom:3px;
+   margin-bottom:0px;
    margin-left:auto;
   margin-right:auto;
   width:1080px; 
   padding-right:0px;
-  padding-left: 0px;
+  padding-left: 2px;
   padding-top: 30px;
   padding-bottom: 10px;
     
@@ -32,7 +32,8 @@ nav a {
 
 nav li {
     display:inline-block;
-    padding: 1em 1em 1em 1em;
+    padding: 0.2em 0em  0em 0em;
+    margin:2px;
     background-color:#d2d2d2;
 }
   nav a:hover {
@@ -82,8 +83,14 @@ background-image: url('flag_background.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-   box-shadow: 0px 2px 10px #333333;
 
+}
+#fishy{
+background-image: url('ilikefish.jpg');
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 #wrapper{
@@ -94,5 +101,162 @@ background-image: url('flag_background.png');
   min-width: 960px;
   max-width: 2048px;
   box-shadow: 0px 2px 10px #333333;
+  float:clear;
+}
+#clockdiv > div{
+    padding: 80px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+    margin-left:30px;
 }
 
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+header, main, nav, footer, figure, figcaption, aside, section, article { display:block; }
+
+@media only screen and (max-width: 64em) {
+  body {
+    margin:0px;
+    background-color: #FFFFFF;
+  }
+  #wrapper {
+    min-width: 0px;
+    width: auto;
+    box-shadow: none;
+  }
+  main {
+    margin-left: 0px;
+  }
+  nav {
+    float:none;
+    width: auto;
+    text-align: center;
+    padding:2.5em;
+  }
+  nav li {
+    display:inline;
+    padding:0.25em 0.75em 0.25em 0.75em;
+    color:white;
+  }
+  
+  #strip
+  {
+    margin-left:0px;
+    height: 200px;
+  }
+  .pic
+  {
+    margin-left:0px;
+    height: 200px;
+  }
+  #fishy
+  {
+    margin-left:0px;
+    height: 200px;
+  }
+  #clockdiv > div{
+    padding: 80px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+    margin-left:30px;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+  footer
+   {
+    margin-left: 0px;
+   }
+ }
+
+@media only screen and (max-width:37.5em) {
+
+ label 
+ { float: none; text-align: left; } 
+ input[type="submit"] { margin-left: 0; }
+
+  header {
+    padding:1em;
+  }
+  
+  main {
+    padding: 0.1em 1em 0.1em 1em;
+    font-size:90%;
+  }
+
+   h1 {
+    font-size: 1.5em;
+   }
+
+   nav {
+    display: block;
+    padding:0px;
+    margin:0px;
+    background-color:none;
+  
+   }
+
+
+   nav li {
+    display:block;
+    margin:0px
+    padding:0px;
+        border-bottom:2px solid #330000;
+    background-color:none;
+   }
+   nav a {
+    display:block;
+    text-align: left;
+    margin:0px;
+    padding:0px;
+    background-color:none;
+   }
+
+
+  #strip
+  
+  {
+    width:37.5em;
+    height:30px;
+  }
+.strip
+{
+width:37.5em;
+    height:30px;
+}
+ .pic
+  {
+    background-image:none;
+    height: 0px;
+  }
+  #fishy
+  {
+    background-image:none;
+    height: 0px;
+  }
+  #mobile {
+    display:inline;
+  }
+
+  #desktop {
+    display:none;
+  }
+  #wrapper{
+box-shadow: none;
+  }
+  }
